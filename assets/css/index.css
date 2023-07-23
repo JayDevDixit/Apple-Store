@@ -28,7 +28,7 @@
     width: 3em;
     border-radius: 50%;
     background-color: white;
-    box-shadow: inset 0px 0px 0px 0.75em #0071E3;
+    box-shadow: inset 0px 0px 0px 0.75em;
     transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
   }
   
@@ -81,6 +81,12 @@
     opacity: 1;
     transform: translate(2em, 2em) rotate(-15deg);
   }
+  #logo-image{
+    height: 80%;
+    margin-left: 2vw;
+    margin-right: 4vw;
+    mix-blend-mode:difference;
+  }
 
  #header{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -107,18 +113,7 @@ nav .nav__btn{
   box-shadow: 0px 0px 30px 1px rgba(212, 0, 255, 0.3);
 }
 
- @keyframes slide {
-    0%{
-    background-position: -8em 0;
-    }
-    50%{
-    background-position: 0 0;
-    }
-    100%{
-    background-position: 0 0;
-    }
-}
-
+ 
 .card {
   align-items: center;
   justify-content: center;
@@ -229,3 +224,15 @@ nav .nav__btn{
       transform: rotate(360deg);
     }
   } 
+@keyframes slide {
+    0%{
+    background-position: -8em 0;
+    }
+    50%{
+    background-position: 0 0;
+    }
+    100%{
+    background-position: 0 0;
+    }
+}
+
