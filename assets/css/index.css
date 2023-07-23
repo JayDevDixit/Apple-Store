@@ -92,6 +92,16 @@
     background-repeat: no-repeat;
     /* animation: slide 4s infinite alternate-reverse ease-in-out; */
  }
+
+
+nav .nav__btn{
+  background: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  border: none;
+  cursor:pointer;
+  font-family: cursive;
+  font-weight: bold;
+}
+
  @keyframes slide {
     0%{
     background-position: -8em 0;
@@ -103,3 +113,114 @@
     background-position: 0 0;
     }
 }
+
+.card {
+  align-items: center;
+  justify-content: center;
+  width: 60vmin;
+  height: 70vh;
+  background: black;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  border-radius: 20px;
+  top: -80;
+  left: calc(50vw - 32vmin);
+  position: absolute;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: cursive;
+  transition:all 4s;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+  font-size: cursive;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 32vmin;
+  background-image: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  /* animation: rotBGimg 3s linear infinite; */
+  transition: all 0.2s linear;
+}
+
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 5px;
+  border-radius: 15px;
+}  
+.card:hover{
+  box-shadow: 0px 0px 30px 1px rgba(212, 0, 255, 0.3);
+  transform: scale(1.1);
+  background-color: rgb(71, 71, 71);
+  
+}
+.card h1,form{
+  z-index: 3;
+}
+.card form{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70%;
+  flex-direction: column;
+}
+.card h1{
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+}
+.card #username,#password{
+  text-align: center;
+  outline: none;
+  border-radius: 25px;
+  color: white;
+  background-color: transparent;
+}
+.card input[type='submit']{
+  color:white;
+  background-color: #252525;
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+}
+.card #buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card input{
+  cursor: pointer;
+  font-family: cursive;
+  font-weight: bold;
+
+}
+#forget-btn:hover{
+  background-color: red;
+}
+#login-btn:hover,#signup-btn:hover{
+  background: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
+}
+
+  
+
+@keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  } 
