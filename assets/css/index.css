@@ -98,7 +98,9 @@ nav .nav__btn{
   background: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
   border: none;
   cursor:pointer;
-  font-family: cursive;
+ font-family: 'Edu SA Beginner', cursive;
+ /* font-family: 'Raleway', sans-serif; */
+ /* font-family: 'Victor Mono', monospace; */
   font-weight: bold;
 }
 
@@ -124,7 +126,7 @@ nav .nav__btn{
   display: flex;
   overflow: hidden;
   border-radius: 20px;
-  top: -80;
+  top: -80vh;
   left: calc(50vw - 32vmin);
   position: absolute;
   flex-direction: column;
@@ -202,7 +204,7 @@ nav .nav__btn{
 }
 .card input{
   cursor: pointer;
-  font-family: cursive;
+  font-family: 'Victor Mono', monospace;
   font-weight: bold;
 
 }
