@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900& display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+   font-family: 'poppins',sans-serif ;
+}
+
+
+/*  */
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1a192c;
+}
+.wrapper{
+    width: 100%;
+}
+
+.title h1{
+    color:#fff;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px,80px;
+}
+.image-section{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.image-section img{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: block;
+
+    margin: auto;
+
+}
+article{
+    width: 99%;
+
+
+}
+article  h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #7d7d7d;
+    
+
+}
+
+article  p{
+    font-size: 15px;
+    /* font-weight: 500; */
+    color: #fff;
+    margin-top: 25px;
+    
+
+}
+
+article  .button{
+    margin-top: 35px;
+}
+
+
+article a{
+    color: #fff;
+    padding: 10px,25px;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid #f3be00;
+    border-radius: 5px;
+}
+
+
+article a:hover{
+
+    background-color: #f3be00;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width:768px)
+{
+    .wrapper{
+        margin-top: 15px;
+
+    }
+    .title h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .image-section img{
+        height: 200px;
+        width: 200px;
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    article{
+        margin-top: 30px;
+    }
+
+    article h3{
+        font-size: 18px;
+    }
+    article  p{
+        font-size: 15px;
+        /* font-weight: 500; */
+     
+}
+article  .button{
+    margin-bottom: 50px;
+}
+article  a{
+    padding: 8px 20px;
+    font-size: 17px;
+}
+
+}
