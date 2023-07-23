@@ -4,15 +4,15 @@
 /*Variables css*/
 /*Colores*/
 :root {
-  --first-color: #1D1D1F;
-  --second-color: #0071E3;
-  --white-color: #FFF;
-  --dark-color: #121212
+  --first-color: #1d1d1f;
+  --second-color: #0071e3;
+  --white-color: #fff;
+  --dark-color: #121212;
 }
 
 /*Fuente y tipografia*/
 :root {
-  --body-font: 'Roboto', sans-serif;
+  --body-font: "Roboto", sans-serif;
   --biggest-font-size: 3.5rem;
   --bigger-font-size: 2.25rem;
   --big-font-size: 1.625rem;
@@ -40,9 +40,11 @@
 }
 
 /*----- BASE -----*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -56,7 +58,10 @@ body {
   color: var(--first-color);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -99,11 +104,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,8 +122,8 @@ img {
     padding: 2rem 1rem;
     z-index: var(--z-fixed);
     border-bottom: 1px solid gray;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 
@@ -127,8 +132,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav__item {
@@ -176,8 +181,8 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1.5fr 1fr 1fr;
-      grid-template-rows: 1.5fr 1fr 1fr;
-      grid-template-areas: "data" "img" "scroll";
+  grid-template-rows: 1.5fr 1fr 1fr;
+  grid-template-areas: "data" "img" "scroll";
   row-gap: 1.5rem;
 }
 
@@ -208,8 +213,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .home__img img {
@@ -224,8 +229,8 @@ img {
   grid-area: scroll;
   text-align: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .home__scroll-text {
@@ -241,39 +246,39 @@ img {
 /*ANIMATION*/
 .airpod1 {
   -webkit-animation: airpod1 3s infinite;
-          animation: airpod1 3s infinite;
+  animation: airpod1 3s infinite;
 }
 
 @-webkit-keyframes airpod1 {
   50% {
     -webkit-transform: translatey(-6%);
-            transform: translatey(-6%);
+    transform: translatey(-6%);
   }
 }
 
 @keyframes airpod1 {
   50% {
     -webkit-transform: translatey(-6%);
-            transform: translatey(-6%);
+    transform: translatey(-6%);
   }
 }
 
 .airpod2 {
   -webkit-animation: airpod2 3s infinite;
-          animation: airpod2 3s infinite;
+  animation: airpod2 3s infinite;
 }
 
 @-webkit-keyframes airpod2 {
   50% {
     -webkit-transform: translatey(6%);
-            transform: translatey(6%);
+    transform: translatey(6%);
   }
 }
 
 @keyframes airpod2 {
   50% {
     -webkit-transform: translatey(6%);
-            transform: translatey(6%);
+    transform: translatey(6%);
   }
 }
 
@@ -283,13 +288,13 @@ img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: max-content max-content;
-      grid-template-columns: -webkit-max-content -webkit-max-content;
-      grid-template-columns: max-content max-content;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .details__box {
@@ -319,8 +324,8 @@ img {
   width: -moz-max-content;
   width: max-content;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .details__img img {
@@ -330,20 +335,20 @@ img {
 /*ANIMATION*/
 .airpods {
   -webkit-animation: airpods 3s infinite;
-          animation: airpods 3s infinite;
+  animation: airpods 3s infinite;
 }
 
 @-webkit-keyframes airpods {
   50% {
     -webkit-transform: translatey(-6%);
-            transform: translatey(-6%);
+    transform: translatey(-6%);
   }
 }
 
 @keyframes airpods {
   50% {
     -webkit-transform: translatey(-6%);
-            transform: translatey(-6%);
+    transform: translatey(-6%);
   }
 }
 
@@ -373,19 +378,20 @@ img {
   .home {
     height: 100vh;
     -ms-grid-columns: min-content;
-        grid-template-columns: -webkit-min-content;
-        grid-template-columns: min-content;
+    grid-template-columns: -webkit-min-content;
+    grid-template-columns: min-content;
     -ms-grid-rows: 80% 10%;
-        grid-template-rows: 80% 10%;
-        grid-template-areas: "data img"
- "scroll scroll";
+    grid-template-rows: 80% 10%;
+    grid-template-areas:
+      "data img"
+      "scroll scroll";
     -ms-flex-line-pack: end;
-        align-content: flex-end;
+    align-content: flex-end;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-column-gap: 4rem;
-            column-gap: 4rem;
+    column-gap: 4rem;
   }
   .home__data {
     -ms-grid-row: 1;
@@ -393,8 +399,8 @@ img {
     grid-area: data;
     padding: 0;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     text-align: initial;
   }
   .home__description {
@@ -405,8 +411,8 @@ img {
     -ms-grid-column: 2;
     grid-area: img;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .home__img img {
     width: 114px;
@@ -422,15 +428,15 @@ img {
   /*DETAILS*/
   .details {
     -webkit-column-gap: 4rem;
-            column-gap: 4rem;
+    column-gap: 4rem;
   }
   .details__box {
     margin-bottom: 2rem;
   }
   .details__img {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .details__img img {
     width: 300px;
