@@ -72,13 +72,7 @@ footer .social_icon li  a:hover{
     width: 100%;
     height: 100px;
 
-    /*  */
-
     background: url(../img/wave.png); 
-    
-    /* for black bg */
-    /* filter:grayscale(); */
-    /* mix-blend-mode:color-burn; */
 
     background-size: 1000px 100px ;
  }
