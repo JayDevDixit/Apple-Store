@@ -26,13 +26,19 @@ dark.addEventListener('click',()=>{
 
 let login_btn = document.getElementsByClassName('nav__btn')[0]
 let showlogin = false
+let login_modal = document.getElementById('login-modal')
 login_btn.addEventListener('click',()=>{
     showlogin = !showlogin
-    let login_modal = document.getElementById('login-modal')
     if(showlogin){
-        login_modal.style.top = '20vh'
+        login_modal.style.top = '13vh'
     }
     else{
+        login_modal.style.top = '-80vh'
+    }
+})
+main = document.getElementsByTagName('main')[0]
+main.addEventListener('click',()=>{
+    if(showlogin){
         login_modal.style.top = '-80vh'
     }
 })
