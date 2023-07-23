@@ -5,6 +5,7 @@ footer{
     width: 100%;
     /* background: black; */
     background: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    filter: grayscale();
     min-height: 100px;
     padding: 20px 50px;
     display: flex;

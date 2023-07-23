@@ -5,8 +5,6 @@ nav_menu = document.getElementById('nav-menu')
 nav_logo = document.getElementById('nav-logo')
 home_title = Array.from(document.getElementsByClassName('home__title'))[0]
 darken_elements = [...nav_links,header,document.body,nav_menu,nav_logo]
-footer = document.getElementsByTagName('footer')[0]
-waves = document.getElementsByClassName('waves')
 dark.addEventListener('click',()=>{
     if(dark.checked){
         for(let i of darken_elements){
@@ -14,8 +12,6 @@ dark.addEventListener('click',()=>{
             i.style.color = 'white'
         }
         home_title.style.backgroundImage = 'linear-gradient(white,white)'
-        footer.style.background = 'black'
-        footer.style.filter = 'grayscale()'
 
     }
     else{
@@ -24,8 +20,6 @@ dark.addEventListener('click',()=>{
             i.style.color = 'black'
         }
         home_title.style.backgroundImage = 'linear-gradient(black,black)'
-        footer.style.background = 'linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255))'
-
 
     }
 })
